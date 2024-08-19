@@ -12,7 +12,7 @@ Exemple of Confidential AI inference with LightGBM on Klave.
 ## Description
 
 This contract implements a single method "getExposureRisk" that take user input, load lightGBM model, infer from user input, unload LightGBM model and return results to the user.
-We use as an example the model we have created for determinating COVID contamination risk - [![Paper]](https://app.klave.com/template/github/secretarium/klave-secure-rooms](https://arxiv.org/pdf/2103.17096))
+We use as an example the model we have created for determinating COVID contamination risk - [Paper](https://arxiv.org/pdf/2103.17096)
 
 ## Build your back-end locally
 

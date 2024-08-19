@@ -1,0 +1,20 @@
+{
+    "name": "klave-simple-ai",
+    "description": "This is a honest application for the Klave Network",
+    "author": "Etienne <etienne@secretarium.org> (https://github.com/Gosu14)",
+    "version": "0.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/Gosu14/klave-simple-ai",
+    "scripts": {
+        "build": "stac ."
+    },
+    "devDependencies": {
+        "@klave/sdk": "0.12.0",
+        "as-base64": "0.2.0",
+        "assemblyscript": "^0.27.26",
+        "path-complete-extname": "1.0.0",
+        "tslib": "^2.6.2",
+        "visitor-as": "^0.11.4",
+        "zod": "^3.22.4"
+    }
+}

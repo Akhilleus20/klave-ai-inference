@@ -41,38 +41,38 @@ After deploying the contract and allocating Credit the App, you can try to call 
 {
 	"riskProfile": "low",
 	"questionnaire": {
-				"locationType": 8,
-				"locationInsideOrOutside": 0,
-				"numberOfPeoplePresent": 3,
-				"timeSpentOnLocation": 0,
-				"wearingMask": 0,
-				"staffProperlyWearingPPE": 0,
-				"peopleProperlyWearingPPE": 0,
-				"socialDistancing": 1,
-				"additionalMeasuresInPlace" : 0,
-				"numberOfPeopleInTheParty": 1,
-				"allMemberOfHousehold": 1,
-				"allMemberOfSupportBubble": 0,
-				"qualityOfTheAirflow": 3,
-				"temperatureInVenue": 2,
-				"humidityInVenue": 1,
-				"cleanAfterEveryUsage": 3,
-				"anyContactBetweenMembers": 2,
-				"physicalActivity": 2,
-				"exposureLedContamination": 2
+		"locationType": 8,
+		"locationInsideOrOutside": 0,
+		"numberOfPeoplePresent": 3,
+		"timeSpentOnLocation": 0,
+		"wearingMask": 0,
+		"staffProperlyWearingPPE": 0,
+		"peopleProperlyWearingPPE": 0,
+		"socialDistancing": 1,
+		"additionalMeasuresInPlace" : 0,
+		"numberOfPeopleInTheParty": 1,
+		"allMemberOfHousehold": 1,
+		"allMemberOfSupportBubble": 0,
+		"qualityOfTheAirflow": 3,
+		"temperatureInVenue": 2,
+		"humidityInVenue": 1,
+		"cleanAfterEveryUsage": 3,
+		"anyContactBetweenMembers": 2,
+		"physicalActivity": 2,
+		"exposureLedContamination": 2
 	}
 }
 ```
 And you should get the following output:
 
 ```json
-    {
-        "inferred": 0.5018788418268543,
-        "riskIndex": 1,
-        "contaminationStatus": "medium",
-        "colour": "#fe6100",
-        "visuallyImpairedColour": "#dc267f"
-    }
+{
+   "inferred": 0.5018788418268543,
+   "riskIndex": 1,
+   "contaminationStatus": "medium",
+   "colour": "#fe6100",
+   "visuallyImpairedColour": "#dc267f"
+}
 ```
 Don't hesitates to play with the input to infer different results.
 

@@ -11,7 +11,7 @@ Exemple of Confidential AI inference with LightGBM on Klave.
 
 ## Description
 
-This contract implements a single method "getExposureRisk" that take user input, load lightGBM model, infer from user input, unload LightGBM model and return results to the user.
+This contract implements a single method `getExposureRisk` that take user input, load lightGBM model, infer from user input, unload LightGBM model and return results to the user.
 We use as an example the model we have created for determinating COVID contamination risk - [Paper](https://arxiv.org/pdf/2103.17096)
 
 ## Build your back-end locally
@@ -32,6 +32,49 @@ You can deploy the back-end of the secure data room to Klave with one click:
 [![Deploy on Klave](https://klave.com/images/deploy-on-klave.svg)](https://app.klave.com/template/github/secretarium/klave-secure-rooms)
 
 Retrieve the address of your honest application after deployment on klave website as you will target it within the UI and the storage server.
+
+## Try it !
+
+After deploying the contract and allocating Credit the App, you can try to call the method `getExposureRisk` method with the following input:
+
+```json
+{
+	"riskProfile": "low",
+	"questionnaire": {
+				"locationType": 8,
+				"locationInsideOrOutside": 0,
+				"numberOfPeoplePresent": 3,
+				"timeSpentOnLocation": 0,
+				"wearingMask": 0,
+				"staffProperlyWearingPPE": 0,
+				"peopleProperlyWearingPPE": 0,
+				"socialDistancing": 1,
+				"additionalMeasuresInPlace" : 0,
+				"numberOfPeopleInTheParty": 1,
+				"allMemberOfHousehold": 1,
+				"allMemberOfSupportBubble": 0,
+				"qualityOfTheAirflow": 3,
+				"temperatureInVenue": 2,
+				"humidityInVenue": 1,
+				"cleanAfterEveryUsage": 3,
+				"anyContactBetweenMembers": 2,
+				"physicalActivity": 2,
+				"exposureLedContamination": 2
+	}
+}
+```
+And you should get the following output:
+
+```json
+    {
+        "inferred": 0.5018788418268543,
+        "riskIndex": 1,
+        "contaminationStatus": "medium",
+        "colour": "#fe6100",
+        "visuallyImpairedColour": "#dc267f"
+    }
+```
+Don't hesitates to play with the input to infer different results.
 
 ## Authors
 

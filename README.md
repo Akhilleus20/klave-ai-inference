@@ -1,5 +1,5 @@
 <a href="https://klave.com/">
-  <img alt="Klave - Secure Data Rooms" src="https://klave.com/images/marketplace/secure-data-rooms.svg">
+  <img alt="Klave - Confidential AI Inference" src="https://klave.com/images/marketplace/confidential-ai.svg">
   <h1 align="center">Confidential AI Inference</h1>
 </a>
 
